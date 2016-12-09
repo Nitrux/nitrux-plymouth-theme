@@ -1,2 +1,2 @@
-# nomad-plymouth-themes
+# nomad-plymouth-theme
 Plymouth Themes
