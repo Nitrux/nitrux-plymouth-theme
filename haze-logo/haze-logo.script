@@ -25,7 +25,7 @@
 
 
 logo.image = Image("logo.png");
-Window.SetBackgroundTopColor (1.0, 1.0, 1.0);     # Colors (RGB) are represented as percentages e.g. 100%=1.0 80%=0.8 and so on...
+Window.SetBackgroundTopColor (1.0, 1.0, 1.0);     /*Colors (RGB) are represented as percentages e.g. 100%=1.0 80%=0.8 and so on...*/
 Window.SetBackgroundBottomColor (1.0, 1.0, 1.0);
 logo.sprite = Sprite(logo.image);
 logo.sprite.SetX (Window.GetWidth()  / 2 - logo.image.GetWidth()  / 2);
