@@ -1,10 +1,10 @@
 [Plymouth Theme]
-Name=Haze Text
-Description=Text mode theme based on haze-logo theme
+Name=Nomad Linux Text
+Description=Text mode theme based on nomad-logo theme
 ModuleName=text
 
 [text]
-title=Haze
+title=Nitrux
 black=0x263238
 white=0xffffff
 brown=0x03A9F4

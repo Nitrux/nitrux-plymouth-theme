@@ -1,8 +1,0 @@
-[Plymouth Theme]
-Name=Haze Logo
-Description=Simple plymouth theme.
-ModuleName=script
-
-[script]
-ImageDir=/usr/share/plymouth/themes/haze-logo
-ScriptFile=/usr/share/plymouth/themes/haze-logo/haze-logo.script
