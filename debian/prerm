@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+if [ "x$1" = xremove ]; then
+	update-alternatives \
+		--remove default.plymouth /usr/share/plymouth/themes/nomad-logo/nomad-logo.plymouth
+
+        update-alternatives \
+		--remove text.plymouth /usr/share/plymouth/themes/nomad-text/nomad-text.plymouth
+
+fi
+
+#DEBHELPER#
