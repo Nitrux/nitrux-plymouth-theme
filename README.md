@@ -2,7 +2,7 @@
 
 This is the repository for the Plymouth theme used in Nitrux.
 
-![](https://i.imgur.com/zg23Jle.png)
+![](https://i.imgur.com/umrEJe8.png)
 
 # Requirements
 - Plymouth.
