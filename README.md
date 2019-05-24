@@ -1,4 +1,4 @@
-# Nomad Plymouth Theme [![Build Status](https://travis-ci.org/Nitrux/nitrux-plymouth-theme.svg?branch=master)](https://travis-ci.org/nomad-desktop/nitrux-plymouth-theme)
+# Nitrux Plymouth Theme [![Build Status](https://travis-ci.org/Nitrux/nitrux-plymouth-theme.svg?branch=master)](https://travis-ci.org/Nitrux/nitrux-plymouth-theme)
 
 This is the repository for the Plymouth theme used in Nitrux.
 
