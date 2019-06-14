@@ -39,8 +39,8 @@ include(CPack)
 add_custom_target(dist COMMAND ${CMAKE_MAKE_PROGRAM} package_source)
 
 # Subdirectories
-add_subdirectory(nomad_logo)
-add_subdirectory(nomad_text)
+add_subdirectory(nomad-logo)
+add_subdirectory(nomad-text)
 
 # Display featute summary
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
