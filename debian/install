@@ -1,2 +1,2 @@
-nomad-logo /usr/share/plymouth/themes/
-nomad-text /usr/share/plymouth/themes/
+themes/nomad-logo /usr/share/plymouth/themes/
+themes/nomad-text /usr/share/plymouth/themes/
