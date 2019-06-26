@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: plymouth-theme-nomad
-Source: <url://example.com>
+Upstream-Name: plymouth-theme-nitrux
+Source: https://github.com/Nitrux/nitrux-plymouth-theme
 
 Files: *
 Copyright: <years> <put author's name and email here>

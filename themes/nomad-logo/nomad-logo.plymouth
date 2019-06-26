@@ -1,8 +1,0 @@
-[Plymouth Theme]
-Name=Nomad Logo
-Description=Simple plymouth theme.
-ModuleName=script
-
-[script]
-ImageDir=/usr/share/plymouth/themes/nomad-logo
-ScriptFile=/usr/share/plymouth/themes/nomad-logo/nomad-logo.script

@@ -20,13 +20,13 @@ case "$1" in
     configure)
 	update-alternatives \
 		--install /usr/share/plymouth/themes/default.plymouth default.plymouth \
-		/usr/share/plymouth/themes/nomad-logo/nomad-logo.plymouth 100 # \
+		/usr/share/plymouth/themes/nitrux-logo/nitrux-logo.plymouth 100 # \
 #		--slave /lib/plymouth/themes/default.grub default.plymouth.grub \
 #		/lib/plymouth/themes/ubuntu-logo/ubuntu-logo.grub
 
 	update-alternatives \
 		--install /usr/share/plymouth/themes/text.plymouth text.plymouth \
-		/usr/share/plymouth/themes/nomad-text/nomad-text.plymouth 100
+		/usr/share/plymouth/themes/nitrux-text/nitrux-text.plymouth 100
 		
 	if which update-initramfs >/dev/null 2>&1
 	then

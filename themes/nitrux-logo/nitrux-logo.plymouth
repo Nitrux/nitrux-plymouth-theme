@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Nitrux Logo
+Description=Simple plymouth theme.
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/nitrux-logo
+ScriptFile=/usr/share/plymouth/themes/nitrux-logo/nitrux-logo.script

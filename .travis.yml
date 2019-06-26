@@ -7,9 +7,9 @@ addons:
     - realpath
 install:
 - docker pull ubuntu:bionic
-- wget https://raw.githubusercontent.com/nomad-desktop/nxos-repository-util/master/nxos-repository-util.sh
-  -O nxos-repository-util.sh
-- chmod +x nxos-repository-util.sh
+- wget https://raw.githubusercontent.com/Nitrux/nitrux-repository-util/master/nomad-repository-util.sh
+  -O nomad-repository-util.sh
+- chmod +x nomad-repository-util.sh
 script:
 - docker run --rm -v $(pwd)/:/build/ -w /build/ ubuntu:bionic /bin/bash travis-build.sh
 branches:
@@ -18,16 +18,16 @@ branches:
   - development
 deploy:
 - provider: script
-  script: "./source/nxos-repository-util.sh upload testing *.deb"
+  script: "./source/nomad-repository-util.sh upload nomad-desktop *.deb"
   skip_cleanup: true
   on:
     branch: master
 - provider: script
-  script: "./source/nxos-repository-util.sh upload development *.deb"
+  script: "./source/nomad-repository-util.sh upload nomad-desktop-dev *.deb"
   skip_cleanup: true
   on:
     branch: development
 notifications:
   email: false
   slack:
-    secure: aCntxTBxW9nbItPhgpZ3P0WZJgtjtsa9XYpK+u/rLLwDmDEKoTmUjn9DdHhzv9jU8hrfFZKh3yd0jwF+BFahcI6WANO8dhW/YQax1jEh3Ya2u1TRF4n1e3WVVD0owfuqMSDKAUExs6RRur++FD9eafP7W3bxJ76lfsxFdQ5xLMH8s67snyR5kFasUFzskHh6A1nvAE8yWTaITykdk0EmLir++6BbgmKkh3a8i9rZh7XEbY5AXHZT57f7AKyRmop+A3j9VS8I9YIIUl4DtgyJLaDFaAgoRwWaKigOx4IGWJVVjvnQEWQTqozLsMI0dZpx5F/x78pU2cpjCsPwQPJOgeotWE36hnEOaq39lsbSoJuEJN8LvcB5QGC32dbFK0UkY+zJIxvnnHXe4eZFtEkGVMyZfxH6//AlkohDt8dDvnPQIckvFZaniaLQ8PbaIyMKBssvHGyCC946tN8jmxjWO76s7RS6UYq00LcPvCyKJNqUIbTTVuUOZfJutcXFvvlyO6E0Ppc6G4WIFTSG9EWEzBx9lJCdnU7bPTZ2aVUg3BQXq7Q9euSt4fdnu+sDsHQ7PO+1xhj/2AQV7HUWlOtnb5Dfy0mzWjqmiq96oh0ojz0D38FVWID+8KfoLi0SOh2T7haNBjgfk6JkiauKd72W+PGLFW/nQ+UQH610wjiaQ8w=
+    secure: kFXZLcK/+yIomcfrTqmFtIIiBYsM8NTKMMWL1+8EPazqAZ4Dk9BXq/l4+Rqvrxfzvm4ltFn4adkBTZClNLiKndlGf7+a6D6JNdqhf4cFsIvtGAVxaEnhRbMOWi/X2yBHz9A/OMHfn1bu6Kiwrc8e+pveqneDwXvHNkyxS2pmeOkQxjx/8CSSnC/NCYUhyYCeJDEAORVXsZBx0j9g5Qf5epmee6vgdasprve0/BOXDdqWRIOEbMjL9DJ8SFhjLiqTCEuhBrQDeiya4S025+loxlQ4gAYLiiV4a5B+8Sy11HUfO9EQdefGDplZhEreYCSD75AbJr6Ka+m1ldI8S/uf4s5W4/2YTuiOy0FWZPOmbdjiiajiImeqwRJ3C/HDCztAhdn6i/TsRvouuNeYWDIuYoE0ZD13TFlw9n3MYPWTF/4rdJtBt1dpU5fvlbNGsUxJEtMFr7GJIcpl9CjMpnQ0OMHM02RUOguKG2fSDDGJ9NhSindnQVlIcSyGAExTyn4xv0OlKR2kkowkviBvbIKJNZAtYdqWpe59GYSCgpqwNhBTvPtyofurDMgToXNJlInhnuorBr1l7jRX0aOogQFwbr2OzgA8zFYwJR8y10nblIrJ18hPgmOr2xIdEOSndCXTmNp+HBxnHe07x7OCnG/qAiLgHnU8PrBfrId0k8lBQOc=
