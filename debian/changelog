@@ -1,3 +1,9 @@
+plymouth-theme-nitrux (1.3.2) nxos; urgency=medium
+
+  * Change colors to dark theme.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Mon, 04 May 2020 21:21:00 -0500
+
 plymouth-theme-nitrux (1.3.1) nxos; urgency=medium
 
   * Change package name.
