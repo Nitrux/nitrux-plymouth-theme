@@ -6,7 +6,7 @@ Build-Depends: debhelper (>=9)
 Standards-Version: 3.9.6
 
 Package: plymouth-theme-nitrux
-Architecture: any
+Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Plymouth theme for Nitrux
+Description: Plymouth theme for Nitrux.
  Plymouth theme branded for Nitrux.
