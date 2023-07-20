@@ -1,4 +1,4 @@
-# Nitrux Plymouth Theme [![Build Status](https://travis-ci.org/Nitrux/nitrux-plymouth-theme.svg?branch=master)](https://travis-ci.org/Nitrux/nitrux-plymouth-theme)
+# Nitrux Plymouth Theme
 
 This is the repository for the Plymouth theme used in Nitrux.
 
