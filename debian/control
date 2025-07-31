@@ -7,6 +7,6 @@ Standards-Version: 3.9.6
 
 Package: plymouth-theme-nitrux
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, plymouth
 Description: Plymouth theme for Nitrux.
  Plymouth theme branded for Nitrux.
