@@ -1,19 +1,26 @@
-#!/bin/sh -e
-# This script can be called in the following ways:
-#
-# After the package was installed:
-#       <postinst> configure <old-version>
-#
-#
-# If prerm fails during upgrade or fails on failed upgrade:
-#       <old-postinst> abort-upgrade <new-version>
-#
-# If prerm fails during deconfiguration of a package:
-#       <postinst> abort-deconfigure in-favour <new-package> <version>
-#                  removing <old-package> <version>
-#
-# If prerm fails during replacement due to conflict:
-#       <postinst> abort-remove in-favour <new-package> <version>
+#!/usr/bin/env bash
+
+#############################################################################################################################################################################
+#   The license used for this file and its contents is: BSD-3-Clause                                                                                                        #
+#                                                                                                                                                                           #
+#   Copyright <2025> <Uri Herrera <uri_herrera@nxos.org>>                                                                                                                   #
+#                                                                                                                                                                           #
+#   Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:                          #
+#                                                                                                                                                                           #
+#    1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.                                        #
+#                                                                                                                                                                           #
+#    2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer                                      #
+#       in the documentation and/or other materials provided with the distribution.                                                                                         #
+#                                                                                                                                                                           #
+#    3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software                    #
+#       without specific prior written permission.                                                                                                                          #
+#                                                                                                                                                                           #
+#    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,                      #
+#    THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS                  #
+#    BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE                 #
+#    GOODS OR SERVICES; LOSS OF USE, DATA,   OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,                      #
+#    STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.   #
+#############################################################################################################################################################################
 
 
 case "$1" in
@@ -21,6 +28,9 @@ case "$1" in
 	update-alternatives \
 		--install /usr/share/plymouth/themes/default.plymouth default.plymouth \
 		/usr/share/plymouth/themes/nitrux-logo/nitrux-logo.plymouth 100
+
+	update-alternatives \
+		--set default.plymouth /usr/share/plymouth/themes/nitrux-logo/nitrux-logo.plymouth
 
 	update-alternatives \
 		--install /usr/share/plymouth/themes/text.plymouth text.plymouth \
@@ -44,6 +54,3 @@ case "$1" in
 	exit 1
 	;;
 esac
-
-#DEBHELPER#
-exit 0
