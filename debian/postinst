@@ -54,3 +54,14 @@ case "$1" in
 	exit 1
 	;;
 esac
+
+
+# -- Set Plymouth default properly.
+
+cat <<EOF >> /etc/plymouth/plymouthd.conf
+# Administrator customizations go in this file
+[Daemon]
+Theme=nitrux-logo
+ShowDelay=0
+DeviceTimeout=8
+EOF
