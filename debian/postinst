@@ -54,14 +54,3 @@ case "$1" in
 	exit 1
 	;;
 esac
-
-
-# -- Set Plymouth default properly.
-
-mkdir -p /etc/plymouth
-sed -i '/^\[Daemon\]/,/^$/d' /etc/plymouth/plymouthd.conf 2>/dev/null
-cat <<EOF >> /etc/plymouth/plymouthd.conf
-[Daemon]
-Theme=nitrux-logo
-ShowDelay=1
-EOF
