@@ -58,8 +58,11 @@ esac
 
 # -- Set Plymouth default properly.
 
-cat <<EOF >> /etc/plymouth/plymouthd.conf
-# Administrator customizations go in this file
+cat <<EOF > /etc/plymouth/plymouthd.conf
+# plymouthd.conf
+# Configuration file for plymouthd.
+# Nitux Latinoamericana S.C. (2025).
+
 [Daemon]
 Theme=nitrux-logo
 ShowDelay=0
