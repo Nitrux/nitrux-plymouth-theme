@@ -59,5 +59,9 @@ esac
 # -- Set Plymouth default properly.
 
 mkdir -p /etc/plymouth
-
-echo -e "[Daemon]\nTheme=nitrux-logo\nShowDelay=0" > /etc/plymouth/plymouthd.conf
+sed -i '/^\[Daemon\]/,/^$/d' /etc/plymouth/plymouthd.conf 2>/dev/null
+cat <<EOF >> /etc/plymouth/plymouthd.conf
+[Daemon]
+Theme=nitrux-logo
+ShowDelay=1
+EOF
