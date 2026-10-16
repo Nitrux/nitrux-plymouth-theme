@@ -11,7 +11,11 @@ case "$1" in
 		/usr/share/plymouth/themes/nitrux-logo/nitrux-logo.plymouth 100
 
 	update-alternatives \
-		--set default.plymouth /usr/share/plymouth/themes/nitrux-logo/nitrux-logo.plymouth
+		--install /usr/share/plymouth/themes/default.plymouth default.plymouth \
+		/usr/share/plymouth/themes/bgrt/bgrt.plymouth 110
+
+	update-alternatives \
+		--set default.plymouth /usr/share/plymouth/themes/bgrt/bgrt.plymouth
 
 	update-alternatives \
 		--install /usr/share/plymouth/themes/text.plymouth text.plymouth \
@@ -45,7 +49,7 @@ cat <<EOF > /etc/plymouth/plymouthd.conf
 # Nitux Latinoamericana S.C. (2025).
 
 [Daemon]
-Theme=nitrux-logo
+Theme=bgrt
 ShowDelay=0
 DeviceTimeout=8
 EOF

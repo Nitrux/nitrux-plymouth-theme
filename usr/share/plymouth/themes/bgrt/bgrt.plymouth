@@ -26,13 +26,13 @@ Name[he]=BGRT
 Name[fa]=BGRT
 Name[fi]=BGRT
 Name=BGRT
-Description=Jimmac's spinner theme using the ACPI BGRT graphics as background
+Description=Nitrux theme using the ACPI BGRT graphics as background
 ModuleName=two-step
 
 [two-step]
 Font=Cantarell 12
 TitleFont=Cantarell Light 30
-ImageDir=/usr/share/plymouth/themes/spinner
+ImageDir=/usr/share/plymouth/themes/bgrt
 DialogHorizontalAlignment=.5
 DialogVerticalAlignment=.382
 TitleHorizontalAlignment=.5
